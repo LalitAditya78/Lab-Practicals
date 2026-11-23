@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>City General Hospital - Updated Version</title>
+</head>
+<body>
+
+<header>
+    <h1>City General Hospital</h1>
+    <p>Your Health is Our Top Priority</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#welcome">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#doctors">Doctors</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section id="welcome">
+        <h2>Welcome to City General Hospital</h2>
+        <p>We provide healthcare services with medical technology.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <article>
+            <h3>Cardiology</h3>
+            <p>Comprehensive care for heart conditions.</p>
+        </article>
+        <article>
+            <h3>Pediatrics</h3>
+            <p>Dedicated care for children.</p>
+        </article>
+    </section>
+
+    <section id="doctors">
+        <h2>Our Specialists</h2>
+        <article>
+            <h3>Dr.Lalit, MD</h3>
+            <p>Specialty: Senior Cardiologist</p>
+        </article>
+    </section>
+
+    <section id="appointment">
+        <h2>Patient Appointment Form</h2>
+        <form action="#" method="POST">
+            <div>
+                <label for="patient-name">Patient Name:</label><br>
+                <input type="text" id="patient-name" name="name" required>
+            </div>
+            <div>
+                <label for="patient-email">Email Address:</label><br>
+                <input type="email" id="patient-email" name="email" required>
+            </div>
+            <div>
+                <label for="patient-phone">Phone Number:</label><br>
+                <input type="tel" id="patient-phone" name="phone" required>
+            </div>
+            <div>
+                <label for="department">Select Department:</label><br>
+                <select id="department" name="dept" required>
+                    <option value="" disabled selected>Select Department</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                </select>
+            </div>
+            <div>
+                <label for="appointment-date">Appointment Date:</label><br>
+                <input type="date" id="appointment-date" name="date" required>
+            </div>
+            <div>
+                <label for="medical-notes">Medical Symptoms / Notes:</label><br>
+                <textarea id="medical-notes" name="notes"></textarea>
+            </div>
+            <div>
+                <button type="submit">Submit Appointment</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 City General Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
